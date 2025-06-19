@@ -496,8 +496,8 @@ nav .right a span {
 }
 
 .developer-skills .progress_java { width: 80%; background-color: #c084fc; }
-.developer-skills .progress_javascript { width: 70%; background-color: #93c5fd; }
-.developer-skills .progress_python { width: 95%; background-color: #a7f3d0; }
+.developer-skills .progress_javascript { width: 90%; background-color: #93c5fd; }
+.developer-skills .progress_python { width: 75%; background-color: #a7f3d0; }
 .developer-skills .progress_react { width: 90%; background-color: #fbcfe8; }
 
 @media (max-width: 768px) {
