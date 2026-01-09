@@ -56,10 +56,12 @@
       <div class="text">
         <h2>Hi, I'm Nitish 👋</h2>
         <p style="text-align: justify;line-height:2;text-indent:80px">
-          I’m a Backend Developer, Node.js Developer and Python developer with strong hands-on practice and real-time experience in building secure, scalable, and intelligent applications. I specialize in backend development (NodeJS), Database both NoSQL and SQL, RESTapi, GraphQL, Python-Flask, TripleDES, AES Encryption Techniques, Java development and modern web development. 
-          My work spans multiple domains — including Flask and React-based web applications, machine learning models, encryption systems, real-time communication apps, API integrations, and mobile app development.
-          I have actively worked with technologies such as Node.js, Python, Flask, Java, OpenCV, AES & Triple DES Encryption, API Development, SQLite, Machine Learning, React Native, and MQTT.
-          With a strong focus on problem-solving and performance optimization, I aim to build innovative, secure, and efficient backend architectures that deliver real-world impact and seamless user experiences.
+          I’m a Backend Developer with strong hands-on experience in Node.js and Python, focused on building secure, scalable, and real-world applications. 
+          I enjoy designing clean backend architectures, working with both SQL and NoSQL databases, and developing reliable REST and GraphQL APIs.
+          I’ve built projects across multiple domains—from Flask and React-based web apps to real-time communication systems, encryption-based security solutions, and machine learning integrations.
+          I actively work with AES and Triple DES encryption, API integrations, and performance optimization to ensure applications are both secure and efficient.
+          With experience in Node.js, Flask, Java, OpenCV, SQLite, Machine Learning, React Native, and MQTT
+      
         </p>
 
         <div class="links">
@@ -561,7 +563,12 @@ I’m always open to new opportunities, collaborations, or a simple chat over co
   <label for="message">Message</label>
   <textarea id="message" name="message" cols="30" rows="10" required></textarea>
 
-  <button type="submit">Send Message</button>
+  <div class="button-group">
+    <button type="submit">Send Message</button>
+    <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </button>
+  </div>
         </form>
       </div>
     </section>
@@ -908,6 +915,12 @@ I’m always open to new opportunities, collaborations, or a simple chat over co
         });
       }
     });
+
+    // WhatsApp function
+    function sendWhatsApp() {
+      window.open('https://wa.me/+918675851166', '_blank');
+    }
+
     const form = document.getElementById('contactForm');
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
