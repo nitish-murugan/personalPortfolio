@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/webp" href="images/nLogo.webp">
 
   <title>Nitish Murugan</title>
 </head>
@@ -266,7 +267,7 @@
                 <h3 class="card-title">Facial Intruder Alert System</h3>
                 <p class="card-text">Built with Python and OpenCV, this system detects unauthorized access and triggers real-time alerts via email and phone calls to enhance security.</p>
                 <div class="card-footer">
-                  <a class="card-button" href="https://github.com/nitish-murugan/Facial-Intruder-Alert-System" target="_blank">Source code</a>
+                  <button class="card-button" onclick="openModal('modal1')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -278,7 +279,7 @@
                 <h3 class="card-title">AI Code Vulnerability Detector</h3>
                 <p class="card-text">Developed an AI-powered code vulnerability detector that uses machine learning and static analysis to identify security flaws in code. Integrated with CI/CD pipelines for real-time vulnerability scanning across multiple programming languages.</p>
                 <div class="card-footer">
-                  <a class="card-button" href="https://github.com/nitish-murugan/AICodeVul" target="_blank">Source code</a>
+                  <button class="card-button" onclick="openModal('modal2')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -290,7 +291,7 @@
                 <h3 class="card-title">Secure Mail Client Application</h3>
                 <p class="card-text">Created a secure email client for Hotmail and Live Mail, featuring AES and Triple DES encryption for data protection, along with a spam detection system to improve user experience.</p>
                 <div class="card-footer">
-                  <a class="card-button" target="_blank" href="https://github.com/nitish-murugan/secure_email_client_application">Source code</a>
+                  <button class="card-button" onclick="openModal('modal3')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -302,7 +303,7 @@
                 <h3 class="card-title">HandWritten Digits Recognition</h3>
                 <p class="card-text">Built a machine learning model using Python's NumPy, matplotlib, and scikit-learn to recognize handwritten digits from the MNIST dataset, with model evaluation for performance.</p>
                 <div class="card-footer">
-                  <a class="card-button" target="_blank" href="#">Source code</a>
+                  <button class="card-button" onclick="openModal('modal4')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -314,7 +315,7 @@
                 <h3 class="card-title">Agentic AI Business Model</h3>
                 <p class="card-text">This is an AI-powered Quick Commerce Demand Prediction System that uses machine learning (Random Forest with 93.6% accuracy) to forecast product demand, optimize inventory allocation across cities, and provide automated business intelligence through a modern web interface.</p>
                 <div class="card-footer">
-                  <a class="card-button" target="_blank" href="https://github.com/nitish-murugan/Agentic_AI_Hackathon_Review">Source code</a>
+                  <button class="card-button" onclick="openModal('modal5')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -326,7 +327,7 @@
                 <h3 class="card-title">Energy Monitoring Mobile Application</h3>
                 <p class="card-text">Developed a real-time energy monitoring React Native app with MQTT integration for tracking solar, wind, and battery across multiple PZEM sensors. Built WebSocket bridge architecture enabling live data visualization, automated alerts, and cross-platform solutions.</p>
                 <div class="card-footer">
-                  <a class="card-button" target="_blank" href="https://github.com/nitish-murugan/sihApp_reactNative">Source code</a>
+                  <button class="card-button" onclick="openModal('modal6')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -337,9 +338,8 @@
               <div class="card-content">
                 <h3 class="card-title">WhisperLynx</h3>
                 <p class="card-text">Developed a live chat app using Python's socket programming and AES encryption, ensuring end-to-end security for message transmission.</p>
-                <div class="card-footer" target="_blank" href="https://github.com/nitish-murugan/WhisperLynx">
-                  
-                  <a class="card-button">Source code</a>
+                <div class="card-footer">
+                  <button class="card-button" onclick="openModal('modal7')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -351,7 +351,7 @@
                 <h3 class="card-title">Spotify Analytics</h3>
                 <p class="card-text">Built a web app using the Spotify API to fetch user data and track info via track IDs. Used SQL for storing and retrieving records, and visualized listening stats with Chart.js. The project showcases API integration, data handling, and interactive chart generation.</p>
                 <div class="card-footer">
-                  <a class="card-button" target="_blank" href="#">Source code</a>
+                  <button class="card-button" onclick="openModal('modal8')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -363,7 +363,7 @@
                 <h3 class="card-title">Weather Forecast Application</h3>
                 <p class="card-text">A simple weather app built with Python Flask, fetching real-time data from a Weather API. It uses Jinja2 for dynamic rendering and HTML/CSS for a responsive UI to display current weather conditions.</p>
                 <div class="card-footer">
-                  <a class="card-button"  target="_blank" href="https://github.com/nitish-murugan/weather_App">Source code</a>
+                  <button class="card-button" onclick="openModal('modal9')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -567,9 +567,347 @@ I’m always open to new opportunities, collaborations, or a simple chat over co
     </section>
   </main>
 
+  <!-- Project Modals -->
+  <div id="modal1" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/fias.png" alt="Facial Intruder Alert System">
+        </div>
+        <div class="modal-description">
+          <h2>Facial Intruder Alert System</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, OpenCV, Email API, Twilio</p>
+            <p><strong>Role:</strong> Full Stack Developer</p>
+          </div>
+          <p>Built with Python and OpenCV, this system detects unauthorized access and triggers real-time alerts via email and phone calls to enhance security.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>This comprehensive security system leverages computer vision and machine learning to detect and identify unauthorized individuals attempting to access restricted areas. The system uses OpenCV for real-time facial recognition and detection, implementing advanced algorithms to distinguish between authorized and unauthorized personnel.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Real-time facial detection and recognition using OpenCV</li>
+          <li>Automated email notifications with captured images</li>
+          <li>Phone call alerts for critical security breaches</li>
+          <li>Integration with security camera systems</li>
+          <li>Logging and reporting of all access attempts</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/Facial-Intruder-Alert-System" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/codeVul.webp" alt="AI Code Vulnerability Detector">
+        </div>
+        <div class="modal-description">
+          <h2>AI Code Vulnerability Detector</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, Machine Learning, TensorFlow, Static Analysis Tools</p>
+            <p><strong>Role:</strong> AI/ML Developer</p>
+          </div>
+          <p>Developed an AI-powered code vulnerability detector that uses machine learning and static analysis to identify security flaws in code.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>An intelligent security tool that combines artificial intelligence with static code analysis to automatically detect vulnerabilities in source code. The system is designed to integrate seamlessly with CI/CD pipelines, providing real-time security feedback during the development process.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Machine learning-based vulnerability detection</li>
+          <li>Support for multiple programming languages</li>
+          <li>CI/CD pipeline integration</li>
+          <li>Real-time security scanning</li>
+          <li>Detailed vulnerability reports with remediation suggestions</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/AICodeVul" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/mail.jpg" alt="Secure Mail Client">
+        </div>
+        <div class="modal-description">
+          <h2>Secure Mail Client Application</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, AES Encryption, Triple DES, SMTP/IMAP</p>
+            <p><strong>Role:</strong> Security Developer</p>
+          </div>
+          <p>Created a secure email client for Hotmail and Live Mail, featuring AES and Triple DES encryption for data protection.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A robust email client application that prioritizes security and privacy. This application implements industry-standard encryption algorithms to protect user communications and includes intelligent spam detection capabilities.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>AES and Triple DES encryption for email security</li>
+          <li>Compatible with Hotmail and Live Mail services</li>
+          <li>Advanced spam detection system</li>
+          <li>Secure email storage and transmission</li>
+          <li>User-friendly interface with enhanced privacy controls</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/secure_email_client_application" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal4" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/digits.png" alt="HandWritten Digits Recognition">
+        </div>
+        <div class="modal-description">
+          <h2>HandWritten Digits Recognition</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, NumPy, Matplotlib, Scikit-learn</p>
+            <p><strong>Role:</strong> Machine Learning Developer</p>
+          </div>
+          <p>Built a machine learning model using Python to recognize handwritten digits from the MNIST dataset.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A machine learning project that demonstrates the power of neural networks in recognizing handwritten digits. Using the classic MNIST dataset, this project implements various machine learning algorithms to achieve high accuracy in digit classification.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Implementation using NumPy, matplotlib, and scikit-learn</li>
+          <li>Training on MNIST dataset with 60,000 images</li>
+          <li>Multiple model architectures tested and compared</li>
+          <li>Performance evaluation and visualization</li>
+          <li>Real-time digit recognition capability</li>
+        </ul>
+        <a href="#" class="github-link">
+          <i class="fa-brands fa-github"></i> Source Code Available Soon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal5" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/agenticAI.webp" alt="Agentic AI Business Model">
+        </div>
+        <div class="modal-description">
+          <h2>Agentic AI Business Model</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, Random Forest, Flask, Pandas, Data Visualization</p>
+            <p><strong>Role:</strong> AI Developer & Data Scientist</p>
+          </div>
+          <p>An AI-powered Quick Commerce Demand Prediction System using machine learning to forecast product demand.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A sophisticated AI-driven system designed for quick commerce businesses to predict product demand and optimize inventory allocation. The system achieves 93.6% accuracy using Random Forest algorithms and provides automated business intelligence insights.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Random Forest algorithm with 93.6% prediction accuracy</li>
+          <li>Multi-city inventory optimization</li>
+          <li>Automated business intelligence reports</li>
+          <li>Modern web interface for data visualization</li>
+          <li>Real-time demand forecasting</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/Agentic_AI_Hackathon_Review" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal6" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/reactNative.avif" alt="Energy Monitoring App">
+        </div>
+        <div class="modal-description">
+          <h2>Energy Monitoring Mobile Application</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> React Native, MQTT, WebSocket, Node.js, IoT Sensors</p>
+            <p><strong>Role:</strong> Mobile & IoT Developer</p>
+          </div>
+          <p>Developed a real-time energy monitoring React Native app with MQTT integration for tracking renewable energy sources.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A comprehensive mobile application for monitoring renewable energy systems in real-time. The app tracks solar, wind, and battery energy across multiple PZEM sensors, providing detailed analytics and automated alerts for energy management.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>MQTT protocol integration for real-time data</li>
+          <li>Multi-sensor support (solar, wind, battery)</li>
+          <li>WebSocket bridge architecture</li>
+          <li>Live data visualization with charts</li>
+          <li>Automated alerts and notifications</li>
+          <li>Cross-platform mobile solution (iOS & Android)</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/sihApp_reactNative" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal7" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal7')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/StealthChat.png" alt="WhisperLynx">
+        </div>
+        <div class="modal-description">
+          <h2>WhisperLynx</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, Socket Programming, AES Encryption, Threading</p>
+            <p><strong>Role:</strong> Backend Developer</p>
+          </div>
+          <p>Developed a live chat app using Python's socket programming and AES encryption for secure messaging.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A secure real-time chat application that prioritizes privacy and security. Using Python's socket programming and AES encryption, WhisperLynx ensures that all messages are transmitted with end-to-end encryption, protecting user communications from unauthorized access.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Real-time messaging using socket programming</li>
+          <li>AES encryption for message security</li>
+          <li>End-to-end encrypted communication</li>
+          <li>Multi-user chat support</li>
+          <li>Secure key exchange mechanism</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/WhisperLynx" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal8" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal8')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/spotify.jpg" alt="Spotify Analytics">
+        </div>
+        <div class="modal-description">
+          <h2>Spotify Analytics</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, Spotify API, SQL, Chart.js, Flask</p>
+            <p><strong>Role:</strong> Full Stack Developer</p>
+          </div>
+          <p>Built a web app using the Spotify API to fetch user data and track info with interactive visualizations.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>An analytics dashboard that integrates with Spotify's API to provide detailed insights into listening habits. The application fetches user data, stores it in a SQL database, and presents beautiful visualizations using Chart.js to help users understand their music preferences.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Spotify API integration for data fetching</li>
+          <li>SQL database for data storage and retrieval</li>
+          <li>Interactive charts with Chart.js</li>
+          <li>Track and artist analytics</li>
+          <li>Listening statistics and trends</li>
+        </ul>
+        <a href="#" class="github-link">
+          <i class="fa-brands fa-github"></i> Source Code Available Soon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal9" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal9')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/weather.jpg" alt="Weather App">
+        </div>
+        <div class="modal-description">
+          <h2>Weather Forecast Application</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> Python, Flask, Weather API, Jinja2, HTML/CSS</p>
+            <p><strong>Role:</strong> Full Stack Developer</p>
+          </div>
+          <p>A simple weather app built with Python Flask, fetching real-time data from a Weather API.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>A clean and responsive weather forecasting application built with Python Flask. The app fetches real-time weather data from external APIs and displays current conditions, forecasts, and other meteorological information in an intuitive interface.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Real-time weather data from Weather API</li>
+          <li>Jinja2 templating for dynamic content</li>
+          <li>Responsive HTML/CSS design</li>
+          <li>Current conditions and forecast display</li>
+          <li>Location-based weather information</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/weather_App" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="scripts.js"></script>
-  <script>
+  <script>    // Modal functions
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('project-modal')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const modals = document.querySelectorAll('.project-modal');
+        modals.forEach(modal => {
+          if (modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          }
+        });
+      }
+    });
     const form = document.getElementById('contactForm');
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
