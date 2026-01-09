@@ -72,6 +72,11 @@
             <span>Projects</span>
           </a>
 
+          <a href="#training-contribution">
+            <i class="fa-solid fa-chalkboard-teacher"></i>
+            <span>Training</span>
+          </a>
+
           <a href="#achievement">
             <i class="fa-solid fa-award"></i>
             <span>Achievements</span>
@@ -370,6 +375,42 @@
       </div>
     </section>
 
+    <!-- Training Contribution Section -->
+    <section id="training-contribution" class="skills-section">
+      <h2>Training Contribution</h2>
+      <div class="container my-4">
+        <!-- Row 1: Image Left, Content Right -->
+        <div class="row g-3 mb-5 align-items-center training-row">
+          <div class="col-md-6">
+            <div class="image-container">
+              <img src="images/workshop2.jpg" alt="Training 1">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="training-content">
+              <h3>NodeJS and RESTful API Development Workshop</h3>
+              <p>Conducted an intensive workshop on Node.js and RESTful API development, where I shared practical knowledge and best practices with students. The workshop focused on building scalable backend applications, implementing RESTful principles, and hands-on coding sessions to strengthen their understanding of modern web development.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Content Left, Image Right -->
+        <div class="row g-3 mb-5 align-items-center training-row">
+          <div class="col-md-6 order-md-2">
+            <div class="image-container">
+              <img src="images/workshop1.jpg" alt="Training 2">
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="training-content">
+              <h3>MERN Stack Development Workshop</h3>
+              <p>Led a comprehensive MERN stack workshop covering MongoDB, Express.js, React, and Node.js. The session emphasized full-stack development principles, database integration, and building real-world applications. Students gained confidence in creating end-to-end web applications with modern JavaScript frameworks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="achievement" class="skills-section">
       <h2>Achievements</h2>
       <div class="container my-4">
@@ -380,24 +421,6 @@
             <div class="overlay">
               <h5>AI Hackathon - Vibathon</h5>
               <p>Secured 2nd position in AI Hackathon - "AI Code Vulnerability Detector"</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="image-container">
-            <img src="images/workshop2.jpg" alt="Image 5">
-            <div class="overlay">
-              <h5>Conducted Workshop - NodeJS and RESTful API Development</h5>
-              <p>Great experience interacting with students and sharing practical knowledge</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="image-container">
-            <img src="images/workshop1.jpg" alt="Image 3">
-            <div class="overlay">
-              <h5>Conducted Workshop - MERN stack Development</h5>
-              <p>Feeling more confident in my ability to build full-stack apps with real-world backend setups</p>
             </div>
           </div>
         </div>
@@ -579,13 +602,9 @@ I’m always open to new opportunities, collaborations, or a simple chat over co
     }
   });
     new Swiper(".wrapper", {
-      loop: true,
+      loop: false,
       spaceBetween: 30,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+      rewind: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
