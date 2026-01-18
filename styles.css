@@ -108,6 +108,8 @@ nav .right a span {
   height: 300px; 
   border-radius: 50%;
   object-fit: cover;
+  transform: translateY(-20px); 
+  transition: transform 0.2s ease;
 }
 
 /* SECTION 2: Skills */
