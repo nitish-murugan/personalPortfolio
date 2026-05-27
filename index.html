@@ -41,10 +41,19 @@
         <span>Linkedin</span>
       </a>
       
-      <a href="mailto:nitishmurugan2006@gmail.com">
+      <a href="mailto:nitishmurugan2006@gmail.com" class="email-link">
         <i class="fa-solid fa-envelope"></i>
         <span>Email</span>
       </a>
+
+      <label class="theme-toggle" aria-label="Toggle dark theme">
+        <input id="themeToggle" type="checkbox" role="switch" aria-checked="false">
+        <span class="toggle-track" aria-hidden="true">
+          <span class="toggle-thumb">
+            <span class="material-icons" aria-hidden="true">light_mode</span>
+          </span>
+        </span>
+      </label>
     </div>
   </nav>
 
@@ -201,11 +210,26 @@
           <span>MongoDB</span>
         </div>
 
-	<div class="cell">
+	      <div class="cell">
           <img src="images/node-logo.svg" alt="html logo">
           <span>Node JS</span>
         </div>
+
+        <div class="cell">
+          <img src="images/js.png" alt="css logo">
+          <span>JavaScript</span>
+        </div>
         
+        <div class="cell">
+          <img src="images/express.png" alt="css logo">
+          <span>Express JS</span>
+        </div>
+
+        
+
+      </div>
+
+      <div class="cells">
         <div class="cell">
           <img src="images/java-logo.png" alt="javascript logo">
           <span>Java</span>
@@ -216,9 +240,6 @@
           <span>Python</span>
         </div>
 
-      </div>
-
-      <div class="cells">
         <div class="cell">
           <img src="images/flask.svg" alt="javascript logo">
           <span>Flask</span>
@@ -234,14 +255,34 @@
           <span>Git</span>
         </div>
         
+        
+
+      </div>
+
+      <div class="cells">
         <div class="cell">
-          <img src="images/html.png" alt="css logo">
-          <span>HTML</span>
+          <img src="images/docker.png" alt="html logo">
+          <span>Docker</span>
         </div>
 
         <div class="cell">
-          <img src="images/js.png" alt="css logo">
-          <span>JavaScript</span>
+          <img src="images/kubernetes.png" alt="javascript logo">
+          <span>Kubernetes</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/aws.png" alt="javascript logo">
+          <span>AWS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/jenkins.png" alt="css logo">
+          <span>Jenkins</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/html.png" alt="css logo">
+          <span>HTML</span>
         </div>
 
         <div class="cell">
@@ -282,6 +323,18 @@
                 <p class="card-text">Developed an AI-powered code vulnerability detector that uses machine learning and static analysis to identify security flaws in code. Integrated with CI/CD pipelines for real-time vulnerability scanning across multiple programming languages.</p>
                 <div class="card-footer">
                   <button class="card-button" onclick="openModal('modal2')">View Project Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="/images/busBooking.webp" alt="Design Trends" />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Freelancing - Bus Booking App</h3>
+                <p class="card-text">Built with React Native and Expo, this system streamlines public transportation with QR-based ticketing, real-time live tracking, and multi-role access for users, conductors, and administrators. The platform features secure OTP verification and location-based route management.</p>
+                <div class="card-footer">
+                  <button class="card-button" onclick="openModal('modal_bus')">View Project Details</button>
                 </div>
               </div>
             </div>
@@ -417,6 +470,24 @@
       <h2>Achievements</h2>
       <div class="container my-4">
       <div class="row g-3">
+        <div class="col-md-4">
+          <div class="image-container">
+            <img src="images/academicExcellance25.jpeg" alt="Image 1">
+            <div class="overlay">
+              <h5>Academic Excellance Award 25'</h5>
+              <p>Secured Top 5% Academic Excellance award by KVITT</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-container">
+            <img src="images/academicExcellence26.jpeg" alt="Image 1">
+            <div class="overlay">
+              <h5>Academic Excellance Award 26'</h5>
+              <p>Secured Top 5% Academic Excellance award by KVITT</p>
+            </div>
+          </div>
+        </div>
         <div class="col-md-4">
           <div class="image-container">
             <img src="images/IMG_9660.JPG" alt="Image 1">
@@ -637,6 +708,40 @@ I’m always open to new opportunities, collaborations, or a simple chat over co
           <li>Detailed vulnerability reports with remediation suggestions</li>
         </ul>
         <a href="https://github.com/nitish-murugan/AICodeVul" target="_blank" class="github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_bus" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal_bus')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-image">
+          <img src="/images/busBooking.webp" alt="Freelancing - Bus Booking App">
+        </div>
+        <div class="modal-description">
+          <h2>Freelancing - Bus Booking App</h2>
+          <div class="project-meta">
+            <p><strong>Tech Stack:</strong> React Native, Expo, MongoDB, QR Authentication, Google Maps API</p>
+            <p><strong>Role:</strong> Mobile & Backend Developer</p>
+          </div>
+          <p>A cross-platform mobile app that simplifies bus ticketing and fleet management. Users can book tickets via QR-based passes, track buses live, and drivers/conductors can validate tickets using in-app scanners.</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h3>Project Details</h3>
+        <p>The system provides secure OTP authentication, role-based access (user, conductor, admin), real-time location tracking with Google Maps integration, and QR-generated tickets that can be scanned on boarding. The backend uses Firebase for real-time database and authentication, while push notifications keep users informed of delays and updates.</p>
+        <h4>Key Features:</h4>
+        <ul>
+          <li>QR-based ticketing and on-board validation</li>
+          <li>Real-time bus tracking and ETA calculations</li>
+          <li>Role-based access for users, conductors, and admins</li>
+          <li>Secure OTP verification and Firebase authentication</li>
+          <li>Push notifications for schedule changes and alerts</li>
+        </ul>
+        <a href="https://github.com/nitish-murugan/busIQ-test" class="github-link">
           <i class="fa-brands fa-github"></i> View on GitHub
         </a>
       </div>

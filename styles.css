@@ -48,11 +48,67 @@ nav .right a {
   margin: 0 10px;
 }
 
-nav .right a:last-child {
+nav .right .email-link {
   color: var(--background-color);
   background-color: var(--text-color);
   padding: 5px 15px;
   border-radius: 5px;
+}
+
+nav .right .theme-toggle {
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  /* move slightly down without affecting layout flow */
+  transform: translateY(6px);
+  -webkit-transform: translateY(6px);
+}
+
+nav .right .theme-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+nav .right .theme-toggle .toggle-track {
+  width: 48px;
+  height: 26px;
+  background: #d1d5db;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+nav .right .theme-toggle .toggle-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav .right .theme-toggle .toggle-thumb .material-icons {
+  font-size: 12px;
+  color: #f59e0b;
+}
+
+nav .right .theme-toggle input:checked + .toggle-track {
+  background: #111111;
+}
+
+nav .right .theme-toggle input:checked + .toggle-track .toggle-thumb {
+  transform: translateX(22px);
 }
 
 nav .right a span {
@@ -427,10 +483,15 @@ nav .right a span {
     font-size: 22px;
   }
 
-  nav .right a:last-child {
+  nav .right .email-link {
     color: var(--text-color);
     background-color: transparent;
     padding: 0;
+  }
+
+  nav .right .theme-toggle {
+    margin-left: 8px;
+    transform: translateY(6px);
   }
 
   nav .right a span {
@@ -1056,6 +1117,66 @@ div [class^="col-"]{
   line-height: 1.6;
   color: #666;
   margin: 0;
+}
+
+/* Dark Theme Overrides */
+body.dark-theme {
+  color-scheme: dark;
+  --text-color: #f5f5f5;
+  --background-color: #252525;
+  --link-color: #8ab4ff;
+}
+
+body.dark-theme .wrapper .card,
+body.dark-theme .image-card,
+body.dark-theme .modal-content,
+body.dark-theme .training-content,
+body.dark-theme .skills-section .cells .cell,
+body.dark-theme .card-footer,
+body.dark-theme .project-meta {
+  background-color: #303030;
+  border-color: #2a2a2a;
+}
+
+body.dark-theme .card-button,
+body.dark-theme .github-link {
+  color: #f5f5f5;
+  border-color: #3a3a3a;
+}
+
+body.dark-theme .card-button:hover,
+body.dark-theme .github-link:hover {
+  background: #1b1b1b;
+  border-color: #5a5a5a;
+  color: #f5f5f5;
+}
+
+body.dark-theme .card-title,
+body.dark-theme .card-text,
+body.dark-theme .modal-description h2,
+body.dark-theme .modal-body h3,
+body.dark-theme .modal-body h4,
+body.dark-theme .modal-body p,
+body.dark-theme .modal-body ul li,
+body.dark-theme .project-meta p,
+body.dark-theme .project-meta strong,
+body.dark-theme .training-content h3,
+body.dark-theme .training-content p,
+body.dark-theme .image-card-text,
+body.dark-theme .close-btn {
+  color: #f5f5f5;
+}
+
+body.dark-theme .modal-header {
+  border-bottom-color: #2a2a2a;
+}
+
+body.dark-theme .developer-skills .progress-bar {
+  background-color: #1f1f1f;
+}
+
+body.dark-theme nav .right .theme-toggle .toggle-track {
+  border-color: #ffffff;
 }
 
 /* Responsive Design */
